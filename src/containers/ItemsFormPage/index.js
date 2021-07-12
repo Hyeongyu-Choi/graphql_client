@@ -1,6 +1,9 @@
 import { Button, Form } from "react-bootstrap";
+import { useParams } from "react-router-dom";
 
 const ItemsFormPage = () => {
+  const { id } = useParams();
+
   return (
     <Form style={{ marginBottom: "24px" }}>
       <Form.Group>
